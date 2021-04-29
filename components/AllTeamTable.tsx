@@ -7,7 +7,11 @@ import TeamRow from "./TeamRow";
 const AllTeamTable = (): JSX.Element => {
   const [state, dispatch] = useTable();
   return (
-    <div className={`${state.currTeam ? "hidden" : "block"}`}>
+    <div
+      className={`${
+        state.currTeam ? "hidden" : "block"
+      } flex flex-col space-y-2`}
+    >
       <div className="flex items-center space-x-8 text-gray-400">
         <button className="px-8 py-2 bg-purple-500 flex items-center space-x-2 text-white rounded-md hover:bg-purple-600 transition-colors">
           <Plus />

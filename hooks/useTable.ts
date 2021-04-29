@@ -56,7 +56,7 @@ const reducer = (state: State, action: Action): State => {
 
 const useTableHook = (): [State, Dispatch<Action>] => {
   const [state, dispatch] = useReducer(reducer, {
-    currTeam: teams[0],
+    currTeam: null,
   });
 
   return [state, dispatch];
